@@ -41,15 +41,16 @@
             <th scope="row">9:00 AM</th>
             <td><input class="input" id="hour_1" type="text" /></td>
             <td>
-              <form
+              <input
+                class="saveBtn"
                 type="button"
-                id="saveBtn"
-                value="SAVE"
-                action="save.php"
-                method="POST"
-              ></form>
+                id="saveBtn1"
+                value="Save"
+                onclick="save('hour_1')"
+              />
             </td>
           </tr>
+
           <tr class="hour_2">
             <th scope="row">10:00 AM</th>
             <td><input class="input" id="hour_2" type="text" /></td>
