@@ -34,6 +34,11 @@ textarea {
   font-weight: 600;
 }
 
+.qotd {
+  padding: 20px;
+  font-style: italic;
+}
+
 .container-fluid {
   padding-top: 10px;
   background-color: grey;
