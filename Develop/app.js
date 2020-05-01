@@ -1,19 +1,23 @@
-var currentDate = moment();
+// display current date
 var currentDate = moment().format("MMMM Do YYYY");
 console.log(currentDate);
 $("#currentDate").html(currentDate);
 
+// Allow user's input to persist, even after refresh
+var savedText = document.getElementById("#input");
+localStorage.setItem("savedText", input.val());
+
 window.onload = function () {
-  document.getElementById("submitBtn").onclick = function (e) {
+  document.getElementById("#saveBtn").onclick = function (e) {
     e.preventDefault();
     refilter();
-    document.getElementById("inputForm").onsubmit();
+    document.getElementById("input").onsubmit();
   };
 };
 
 var storedItem = localStorage.getItem("storedItem");
 function save() {
-  var item = document.getElementById("input_1").value;
+  var item = document.getElementById("input1").value;
   localStorage.setItem("storedItem", item);
   document.getElementById("savedText").innerHTML = item + "SAVED";
 }
@@ -23,9 +27,6 @@ function get() {
   document.getElementById("openedText").innerHTML = storedITem + "OPENED";
 }
 
-// let currentDate > hour_id set color attribute accordinglly.
-
-// look into save f(n).
-// $(document).ready(function () {
-//   var userInput = "";
-// });
+// Color-code time block: past (grey), current (red), future (green)
+var currentTime = moment().format("LT");
+console.log(currentTime);

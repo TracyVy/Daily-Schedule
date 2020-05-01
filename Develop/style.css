@@ -31,6 +31,7 @@ textarea {
 .currentDate {
   color: rgb(200, 35, 20);
   font-size: 30px;
+  font-weight: 600;
 }
 
 .container-fluid {
@@ -52,7 +53,7 @@ textarea {
   width: 80%;
 }
 
-.hour_1 {
+.hour1 {
   background-color: green;
 }
 
@@ -79,7 +80,7 @@ textarea {
 
 .saveBtn {
   border-radius: 15px;
-  background-color: #06aed5;
+  background-color: #67aab9;
   color: white;
 }
 
