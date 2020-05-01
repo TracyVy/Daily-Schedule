@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="title">Today's Schedule</h1>
+      <div class="currentDate" id="currentDate"></div>
+    </header>
+    <div class="container-fluid">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col-lg-1" class="timeCol">Time</th>
+            <th scope="col-lg-10" class="toDoCol">To Do List</th>
+            <th scope="col-lg-1" class="actionCol">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hour_1">
+            <th scope="row">9:00 AM</th>
+            <td><input class="input" id="hour_1" type="text" /></td>
+            <td>
+              <form
+                type="button"
+                id="saveBtn"
+                value="SAVE"
+                action="save.php"
+                method="POST"
+              ></form>
+            </td>
+          </tr>
+          <tr class="hour_2">
+            <th scope="row">10:00 AM</th>
+            <td><input class="input" id="hour_2" type="text" /></td>
+            <td><button onclick="save()">SAVE</button></td>
+          </tr>
+          <tr class="hour_3">
+            <th scope="row">11:00 AM</th>
+            <td><input class="input" id="hour_3" type="text" /></td>
+            <td><button onclick="save()">SAVE</button></td>
+          </tr>
+          <tr class="hour_4">
+            <th scope="row">12:00 PM</th>
+            <td><input class="input" id="hour_4" type="text" /></td>
+            <td><button onclick="save()">SAVE</button></td>
+          </tr>
+          <tr class="hour_5">
+            <th scope="row">1:00 PM</th>
+            <td><input class="input" id="hour_5" type="text" /></td>
+            <td><button onclick="save()">SAVE</button></td>
+          </tr>
+          <tr class="hour_6">
+            <th scope="row">2:00 PM</th>
+            <td><input class="input" id="hour_6" type="text" /></td>
+            <td><button onclick="save()">SAVE</button></td>
+          </tr>
+          <tr class="hour_7">
+            <th scope="row">3:00 PM</th>
+            <td><input class="input" id="hour_7" type="text" /></td>
+            <td><button onclick="save()">SAVE</button></td>
+          </tr>
+          <tr class="hour_8">
+            <th scope="row">4:00 PM</th>
+            <td><input class="input" id="hour_8" type="text" /></td>
+            <td><button onclick="save()">SAVE</button></td>
+          </tr>
+          <tr class="hour_9">
+            <th scope="row">5:00 PM</th>
+            <td><input class="input" id="hour_9" type="text" /></td>
+            <td><button onclick="save()">SAVE</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
