@@ -1,12 +1,11 @@
-// display current date
-var currentDate = moment().format("MMMM Do, YYYY");
-console.log(currentDate);
+// Display current date
+var m = moment();
+var currentHour = m.format("h a");
+var currentDate = m.format("MMMM Do, YYYY");
+console.log(currentHour);
 $("#currentDate").html(currentDate);
 
-// Allow user's input to persist, even after refresh
-// var savedText = document.getElementById("#input");
-// localStorage.setItem("savedText", savedText.value);
-
+// AJAX: quote of the day
 $(document).ready(function () {
   console.log("hello");
   var ajaxConfig = {
@@ -19,32 +18,21 @@ $(document).ready(function () {
     var output = response.contents.quotes[0];
     console.log(output.author, output.quote);
     //.html replaces previous html
-    $("#quoteOTD").html(`<p>${output.quote}   ${output.author}</p>`);
+    $("#quoteOTD").html(`<p>${output.quote}  ${output.author}</p>`);
   });
+
+  // if currentHour >
 });
 
-/*
-window.onload = function () {
-  document.getElementById("#saveBtn").onclick = function (e) {
-    e.preventDefault();
-    refilter();
-    document.getElementById("input").onsubmit();
-  };
-};
+// Color-code time block: past (grey), current (red), future (green)
+// console.log(currentTime);
 
-var storedItem = localStorage.getItem("storedItem");
-function save() {
-  var item = document.getElementById("input1").value;
-  localStorage.setItem("storedItem", item);
-  document.getElementById("savedText").innerHTML = item + "SAVED";
-}
+// var currentTime = moment().format("LT");
+// var pastTime = currentTime.format(h);
+// var presentTime = moment().format;
+// var futureTime = moment().format("LT") > currentTime;
 
-function get() {
-  localStorage.getItem("storedItem");
-  document.getElementById("openedText").innerHTML = storedITem + "OPENED";
-}
-
-Color-code time block: past (grey), current (red), future (green)
-var currentTime = moment().format("LT");
-console.log(currentTime);
-*/
+// function getPastTime()
+// Allow user's input to persist, even after refresh
+// var savedText = document.getElementById("#input");
+// localStorage.setItem("savedText", savedText.value);
