@@ -1,5 +1,5 @@
 // display current date
-var currentDate = moment().format("MMMM Do YYYY");
+var currentDate = moment().format("MMMM Do, YYYY");
 console.log(currentDate);
 $("#currentDate").html(currentDate);
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
     var output = response.contents.quotes[0];
     console.log(output.author, output.quote);
     //.html replaces previous html
-    $("#quoteOTD").html(`<p>${output.quote}  ${output.author}</p>`);
+    $("#quoteOTD").html(`<p>${output.quote}   ${output.author}</p>`);
   });
 });
 
