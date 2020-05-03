@@ -24,50 +24,64 @@ $(document).ready(function () {
   // Set color-coded functions: past (grey), current (red), future (green)
   if (currentHour > 9) {
     $(".hour1").attr("style", "background-color: grey;");
-  } else if ((currentHour = 9)) {
+  } else if (currentHour == 9) {
     console.log("XXX hour1=" + $(".hour1"));
     $(".hour1").attr("style", "background-color: red;");
-  } else $(".hour1").attr("style", "background-color: green;");
+  } else {
+    $(".hour1").attr("style", "background-color: green;");
+  }
 
   if (currentHour > 10) {
     $(".hour2").attr("style", "background-color: grey;");
-  } else if ((currentHour = 10)) {
+  } else if (currentHour == 10) {
     $(".hour2").attr("style", "background-color: red;");
-  } else $(".hour2").attr("style", "background-color: green;");
+  } else {
+    $(".hour2").attr("style", "background-color: green;");
+  }
 
   if (currentHour > 11) {
     $(".hour3").attr("style", "background-color: grey;");
-  } else if ((currentHour = 11)) {
+  } else if (currentHour == 11) {
     $(".hour3").attr("style", "background-color: red;");
-  } else $(".hour3").attr("style", "background-color: green;");
+  } else {
+    $(".hour3").attr("style", "background-color: green;");
+  }
 
   if (currentHour > 12) {
     $(".hour4").attr("style", "background-color: grey;");
-  } else if ((currentHour = 12)) {
+  } else if (currentHour == 12) {
     $(".hour4").attr("style", "background-color: red;");
-  } else $(".hour4").attr("style", "background-color: green;");
+  } else {
+    $(".hour4").attr("style", "background-color: green;");
+  }
 
   if (currentHour > 13) {
     $(".hour5").attr("style", "background-color: grey;");
-  } else if ((currentHour = 13)) {
+  } else if (currentHour == 13) {
     $(".hour5").attr("style", "background-color: red;");
-  } else $(".hour5").attr("style", "background-color: green;");
+  } else {
+    $(".hour5").attr("style", "background-color: green;");
+  }
 
   if (currentHour > 14) {
     $(".hour6").attr("style", "background-color: grey;");
-  } else if ((currentHour = 14)) {
+  } else if (currentHour == 14) {
     $(".hour6").attr("style", "background-color: red;");
-  } else $(".hour6").attr("style", "background-color: green;");
+  } else {
+    $(".hour6").attr("style", "background-color: green;");
+  }
 
   if (currentHour > 15) {
     $(".hour7").attr("style", "background-color: grey;");
-  } else if ((currentHour = 15)) {
+  } else if (currentHour == 15) {
     $(".hour7").attr("style", "background-color: red;");
-  } else $(".hour7").attr("style", "background-color: green;");
+  } else {
+    $(".hour7").attr("style", "background-color: green;");
+  }
 
   if (currentHour > 16) {
     $(".hour8").attr("style", "background-color: grey;");
-  } else if ((currentHour = 16)) {
+  } else if (currentHour == 16) {
     console.log("XXX");
     $(".hour8").attr("style", "background-color: red;");
   } else {
@@ -76,9 +90,11 @@ $(document).ready(function () {
 
   if (currentHour > 17) {
     $(".hour9").attr("style", "background-color: grey;");
-  } else if ((currentHour = 17)) {
+  } else if (currentHour == 17) {
     $(".hour9").attr("style", "background-color: red;");
-  } else $(".hour9").attr("style", "background-color: green;");
+  } else {
+    $(".hour9").attr("style", "background-color: green;");
+  }
 });
 
 // function getPastTime()
