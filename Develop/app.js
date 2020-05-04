@@ -12,7 +12,7 @@ $(".dateLabel").html(currentDate);
 $(document).ready(function () {
   console.log("hello");
   var ajaxConfig = {
-    url: "http://quotes.rest/qod.json",
+    url: "https://quotes.rest/qod.json",
     type: "GET",
     dataType: "JSON",
   };
