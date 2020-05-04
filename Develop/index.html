@@ -37,8 +37,7 @@
             <th scope="col-lg-1" class="actionCol">Action</th>
           </tr>
         </thead>
-        <tbody id="myTaskList">
-          <!--
+        <tbody id="toDoItems">
           <tr class="hour1">
             <th scope="row" id="hourKey">9:00 AM</th>
             <td><input class="inputEl" id="hour1" type="text" /></td>
@@ -66,7 +65,7 @@
             </td>
           </tr>
           <tr class="hour3">
-            <th scope="row" id="hourKey">11:00AM</th>
+            <th scope="row" id="hourKey">11:00 AM</th>
             <td><input class="inputEl" id="hour3" type="text" /></td>
             <td>
               <input
@@ -80,7 +79,7 @@
           </tr>
           <tr class="hour4">
             <th scope="row" id="hourKey">12:00 PM</th>
-            <td><input class="inputEl" id="hour_4" type="text" /></td>
+            <td><input class="inputEl" id="hour4" type="text" /></td>
             <td>
               <input
                 class="saveBtn"
@@ -143,20 +142,21 @@
               />
             </td>
           </tr>
-          <tr class="hour9">
-            <th scope="row" id="hourKey">5:00 PM</th>
-            <td><input class="inputEl" id="hour9" type="text" /></td>
-            <td>
-              <input
-                class="saveBtn"
-                type="button"
-                id="saveBtn9"
-                value="SAVE"
-                onclick="save('hour9')"
-              />
-            </td>
-          </tr>
-        --></tbody>
+        </tr>
+        <tr class="hour9">
+          <th scope="row" id="hourKey">5:00 PM</th>
+          <td><input class="inputEl" id="hour9" type="text" /></td>
+          <td>
+            <input
+              class="saveBtn"
+              type="button"
+              id="saveBtn9"
+              value="SAVE"
+              onclick="save('hour9')"
+            />
+          </td>
+        </tr>
+        </tbody>
       </table>
     </div>
 
