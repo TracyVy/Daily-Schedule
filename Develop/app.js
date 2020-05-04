@@ -2,9 +2,9 @@
 var m = moment();
 var currentHour = m.format("HH");
 var currentDate = m.format("MMMM Do, YYYY");
-const firstHour = 9;
-const lastHour = 17;
-var tasks = {};
+const firstHour = 9; // use with for Loop
+const lastHour = 17; // use with for Loop
+// var tasks = {};
 console.log(currentHour);
 $(".dateLabel").html(currentDate);
 
@@ -97,11 +97,41 @@ $(document).ready(function () {
   } else {
     $(".hour9").attr("style", "background-color: #77dd77;");
   }
-});
 
-function save(hourId) {
-  console.log("hourId=" + hourId);
-  console.log("value=" + $("#" + hourId).val());
-  tasks[hourId] = $("#" + hourId).val();
-  localStorage.setItem("tasks", JSON.stringify(tasks));
-}
+  // add new task, aut-save using savy.js
+  $(function addTask1() {
+    $("#task1").savy("load");
+  });
+
+  $(function addTask2() {
+    $("#task2").savy("load");
+  });
+
+  $(function addTask3() {
+    $("#task3").savy("load");
+  });
+
+  $(function addTask4() {
+    $("#task4").savy("load");
+  });
+
+  $(function addTask5() {
+    $("#task5").savy("load");
+  });
+
+  $(function addTask6() {
+    $("#task6").savy("load");
+  });
+
+  $(function addTask7() {
+    $("#task7").savy("load");
+  });
+
+  $(function addTask8() {
+    $("#task8").savy("load");
+  });
+
+  $(function addTask9() {
+    $("#task9").savy("load");
+  });
+});

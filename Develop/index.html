@@ -18,8 +18,9 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Work Day Schedule</title>
   </head>
 
   <body>
@@ -40,120 +41,66 @@
         <tbody id="toDoItems">
           <tr class="hour1">
             <th scope="row" id="hourKey">9:00 AM</th>
-            <td><input class="inputEl" id="hour1" type="text" /></td>
+            <td><input class="inputEl" id="task1" type="text" /></td>
             <td>
-              <input
-                class="saveBtn"
-                type="button"
-                id="saveBtn1"
-                value="SAVE"
-                onclick="save('hour1')"
-              />
+              <button id="save" class="w3-button">SAVE</button>
             </td>
           </tr>
           <tr class="hour2">
             <th scope="row" id="hourKey">10:00 AM</th>
-            <td><input class="inputEl" id="hour2" type="text" /></td>
+            <td><input class="inputEl" id="task2" type="text" /></td>
             <td>
-              <input
-                class="saveBtn"
-                type="button"
-                id="saveBtn2"
-                value="SAVE"
-                onclick="save('hour2')"
-              />
+              <button id="save" class="w3-button">SAVE</button>
             </td>
           </tr>
           <tr class="hour3">
             <th scope="row" id="hourKey">11:00 AM</th>
-            <td><input class="inputEl" id="hour3" type="text" /></td>
+            <td><input class="inputEl" id="task3" type="text" /></td>
             <td>
-              <input
-                class="saveBtn"
-                type="button"
-                id="saveBtn3"
-                value="SAVE"
-                onclick="save('hour3')"
-              />
+              <button id="save" class="w3-button">SAVE</button>
             </td>
           </tr>
           <tr class="hour4">
             <th scope="row" id="hourKey">12:00 PM</th>
-            <td><input class="inputEl" id="hour4" type="text" /></td>
+            <td><input class="inputEl" id="task4" type="text" /></td>
             <td>
-              <input
-                class="saveBtn"
-                type="button"
-                id="saveBtn4"
-                value="SAVE"
-                onclick="save('hour4')"
-              />
+              <button id="save" class="w3-button">SAVE</button>
             </td>
           </tr>
           <tr class="hour5">
             <th scope="row" id="hourKey">1:00 PM</th>
-            <td><input class="inputEl" id="hour5" type="text" /></td>
+            <td><input class="inputEl" id="task5" type="text" /></td>
             <td>
-              <input
-                class="saveBtn"
-                type="button"
-                id="saveBtn5"
-                value="SAVE"
-                onclick="save('hour5')"
-              />
+              <button id="save" class="w3-button">SAVE</button>
             </td>
           </tr>
           <tr class="hour6">
             <th scope="row" id="hourKey">2:00 PM</th>
-            <td><input class="inputEl" id="hour6" type="text" /></td>
+            <td><input class="inputEl" id="task6" type="text" /></td>
             <td>
-              <input
-                class="saveBtn"
-                type="button"
-                id="saveBtn6"
-                value="SAVE"
-                onclick="save('hour6')"
-              />
+              <button id="save" class="w3-button">SAVE</button>
             </td>
           </tr>
           <tr class="hour7">
             <th scope="row" id="hourKey">3:00 PM</th>
-            <td><input class="inputEl" id="hour7" type="text" /></td>
+            <td><input class="inputEl" id="task7" type="text" /></td>
             <td>
-              <input
-                class="saveBtn"
-                type="button"
-                id="saveBtn7"
-                value="SAVE"
-                onclick="save('hour7')"
-              />
+              <button id="save" class="w3-button">SAVE</button>
             </td>
           </tr>
           <tr class="hour8">
             <th scope="row" id="hourKey">4:00 PM</th>
-            <td><input class="inputEl" id="hour8" type="text" /></td>
+            <td><input class="inputEl" id="task8" type="text" /></td>
             <td>
-              <input
-                class="saveBtn"
-                type="button"
-                id="saveBtn8"
-                value="SAVE"
-                onclick="save('hour8')"
-              />
+              <button id="save" class="w3-button">SAVE</button>
             </td>
           </tr>
         </tr>
         <tr class="hour9">
           <th scope="row" id="hourKey">5:00 PM</th>
-          <td><input class="inputEl" id="hour9" type="text" /></td>
+          <td><input class="inputEl" id="task9" type="text" /></td>
           <td>
-            <input
-              class="saveBtn"
-              type="button"
-              id="saveBtn9"
-              value="SAVE"
-              onclick="save('hour9')"
-            />
+            <button id="save" class="w3-button">SAVE</button>
           </td>
         </tr>
         </tbody>
@@ -161,6 +108,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="savy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="app.js"></script>
   </body>
